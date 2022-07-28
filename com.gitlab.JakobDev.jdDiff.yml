@@ -27,8 +27,8 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/JakobDev/jdDiff.git
-        tag: '1.1'
-        commit: 39a496c874e48e96722a4da4564937120d2f261a
+        tag: '1.2'
+        commit: 3a54f2183e25273fadc34ea101d07f96c735a739
         x-checker-data:
           type: git
           tag-pattern: (.+)
