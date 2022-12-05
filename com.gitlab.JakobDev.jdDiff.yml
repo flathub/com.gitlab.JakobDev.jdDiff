@@ -20,7 +20,7 @@ modules:
   - name: jdDiff
     buildsystem: simple
     build-commands:
-      - pip3 install --no-deps --prefix=$FLATPAK_DEST .
+      - pip3 install --no-deps --no-build-isolation --prefix=$FLATPAK_DEST .
       - install -Dm644 jdDiff/Icon.svg /app/share/icons/hicolor/scalable/apps/com.gitlab.JakobDev.jdDiff.svg
       - install -Dm644 Data/com.gitlab.JakobDev.jdDiff.desktop /app/share/applications/com.gitlab.JakobDev.jdDiff.desktop
       - install -Dm644 Data/com.gitlab.JakobDev.jdDiff.metainfo.xml /app/share/metainfo/com.gitlab.JakobDev.jdDiff.metainfo.xml
